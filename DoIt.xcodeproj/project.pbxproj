@@ -15,6 +15,7 @@
 		A9D8F2AD1F7C891A009114CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D8F2AB1F7C891A009114CA /* LaunchScreen.storyboard */; };
 		A9D8F2B51F7C89E7009114CA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8F2B41F7C89E7009114CA /* Task.swift */; };
 		A9D8F2B71F7C92AD009114CA /* CreateTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8F2B61F7C92AD009114CA /* CreateTaskVC.swift */; };
+		A9D8F2B91F7CAFFA009114CA /* TaskInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D8F2B81F7CAFFA009114CA /* TaskInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A9D8F2AE1F7C891A009114CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9D8F2B41F7C89E7009114CA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		A9D8F2B61F7C92AD009114CA /* CreateTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskVC.swift; sourceTree = "<group>"; };
+		A9D8F2B81F7CAFFA009114CA /* TaskInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A9D8F29F1F7C891A009114CA /* AppDelegate.swift */,
 				A9D8F2B61F7C92AD009114CA /* CreateTaskVC.swift */,
 				A9D8F2B41F7C89E7009114CA /* Task.swift */,
+				A9D8F2B81F7CAFFA009114CA /* TaskInfoVC.swift */,
 				A9D8F2A11F7C891A009114CA /* TasksViewController.swift */,
 				A9D8F2A31F7C891A009114CA /* Main.storyboard */,
 				A9D8F2A91F7C891A009114CA /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9D8F2B51F7C89E7009114CA /* Task.swift in Sources */,
+				A9D8F2B91F7CAFFA009114CA /* TaskInfoVC.swift in Sources */,
 				A9D8F2A81F7C891A009114CA /* DoIt.xcdatamodeld in Sources */,
 				A9D8F2A21F7C891A009114CA /* TasksViewController.swift in Sources */,
 				A9D8F2B71F7C92AD009114CA /* CreateTaskVC.swift in Sources */,

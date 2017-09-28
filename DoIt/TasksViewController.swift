@@ -12,6 +12,7 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     @IBOutlet weak var tableView: UITableView!
     var taskList : [Task] = []
+    var selectedIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,11 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         task3.name = "Feed the cats"
         task3.isImportant = false
         tasks.append(task3)
+        
+        let task4 = Task()
+        task4.name = "Party with Dave"
+        task4.isImportant = true
+        tasks.append(task4)
 
         return tasks
     }
@@ -72,13 +78,23 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-//        let nextVC = segue.destination as! TaskInfoVC
-        //prepare
+        let task = taskList[indexPath.row]
+        selectedIndex = indexPath.row
+        performSegue(withIdentifier: "viewTask", sender: task)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nextVC = segue.destination as! CreateTaskVC
-        nextVC.previousVC = self
+        if segue.identifier == "newTask"{
+            //new task
+            let nextVC = segue.destination as! CreateTaskVC
+            nextVC.previousVC = self
+        }
+        if segue.identifier == "viewTask"{
+            //task selected
+            let nextVC = segue.destination as! TaskInfoVC
+            nextVC.task = sender as! Task
+            nextVC.tasksVC = self
+        }
     }
 
 
