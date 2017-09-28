@@ -3,7 +3,7 @@
 //  DoIt
 //
 //  Created by BAM on 2017-09-27.
-//  Copyright © 2017 BAM. All rights reserved.
+//  Copyright © 2017 BAM. All rights reserved..
 //
 
 import UIKit
